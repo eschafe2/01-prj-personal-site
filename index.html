@@ -1,11 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --blue-light: #eaf6fb;
+      --blue-medium: #c3e0f5;
+      --blue-dark: #5a9ecf;
+      --text-dark: #003344;
+      --text-light: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--blue-light);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--blue-dark);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background-color: var(--blue-medium);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--text-dark);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+    }
+
+    section h2 {
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--blue-medium);
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: var(--blue-dark);
+    }
+
+    footer {
+      background-color: var(--blue-medium);
+      text-align: center;
+      padding: 1rem;
+      color: #444;
+    }
+
+    .artist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.artist {
+  text-align: center;
+  width: 150px;
+}
+
+.artist img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  object-fit: cover;
+  height: 150px;
+}
+  </style>
 </head>
 <body>
-  <!-- Add your HTML content here -->
+<header>
+  <h1>Ekaterina Schafer</h1>
+  <p>Student Web Developer | B.A. Psychology, Human Factors & Applied Cognition – George Mason University</p>
+</header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#songs">Songs</a>
+    <a href="#research">Research</a>
+    <a href="#work">Work History</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi there! I'm a student currently taking a web development course. This website is a personal project to practice and display the work I’ll be building throughout the semester. I’m excited to keep improving!</p>
+    </section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <h3>Web Development</h3>
+  <ul>
+    <li>Beginner in HTML, CSS, & JavaScript</li>
+  </ul>
+
+  <h3>Research & Analytical Skills</h3>
+  <ul>
+    <li>Writing, Editing & Proofreading</li>
+    <li>Data Analysis (SPSS, Excel)</li>
+    <li>Literature Review & Synthesis</li>
+    <li>Scientific Writing (APA format)</li>
+    <li>Psychological Research (designing studies, hypothesis testing)</li>
+  </ul>
+
+  <h3>Administrative & Technical</h3>
+  <ul>
+    <li>Microsoft Office Suite & Google Workspace</li>
+    <li>Apple & Windows Operating Systems</li>
+    <li>IBM SPSS</li>
+    <li>Organizational & Logistical Skills</li>
+    <li>Time Management & Multitasking</li>
+  </ul>
+
+  <h3>Interpersonal & Problem-Solving</h3>
+  <ul>
+    <li>Team Collaboration & Communication</li>
+    <li>Problem-Solving & Adaptability</li>
+    <li>Empathy & Interpersonal Awareness</li>
+    <li>Project Management</li>
+  </ul>
+</section>
+
+<section id="artists">
+  <h2>Top 5 Artists I Listen To</h2>
+  <div class="artist-grid">
+    <div class="artist">
+      <img src="img/bbno$.jpg" alt="bbno$">
+      <p>bbno$</p>
+    </div>
+    <div class="artist">
+      <img src="img/stray kids.jpg" alt="Stray Kids">
+      <p>Stray Kids</p>
+    </div>
+    <div class="artist">
+      <img src= "img/yoasobi.jpg" alt="Yoasobi">
+      <p>Yoasobi</p>
+    </div>
+    <div class="artist">
+      <img src="img/Lady gaga.jpg" alt="Lady Gaga">
+      <p>Lady Gaga</p>
+    </div>
+    <div class="artist">
+      <img src="img/ab67616100005174cde5a0d57c1b79de5fce6bee.jpg" alt="Chappell Roan">
+      <p>Chappell Roan</p>
+    </div>
+  </div>
+</section>
+
+    <section id="research">
+      <h2>Research I've Worked On</h2>
+      <p>This will include school research projects, class presentations, and other collaborative work I’ve contributed to. As I gain more experience, I’ll include links and descriptions here.</p>
+    </section>
+
+    <section id="work">
+      <h2>Work History</h2>
+      <p>I’ve worked part-time jobs and internships while studying. As I gain more professional experience, I’ll add job titles, descriptions, and time periods here to showcase my growth.</p>
+    </section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-icons">
+    <div class="contact-item">
+      <img src="img/gmail.png" alt="Gmail Icon">
+      <p>eschafe2@gmu.edu</p>
+    </div>
+    <div class="contact-item">
+      <img src="img/linkedin.png" alt="LinkedIn Icon">
+      <p><a href="https://www.linkedin.com/in/ekaterina-schafer" target="_blank">www.linkedin.com/in/ekaterina-schafer</a></p>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
 </body>
 </html>
+
+
